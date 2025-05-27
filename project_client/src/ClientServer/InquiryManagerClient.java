@@ -37,6 +37,8 @@ public class InquiryManagerClient {
                 System.out.println("7 - Is representative active?");
                 System.out.println("8 - Get representative inquiries");
                 System.out.println("9 - Get representative name by inquiry code");
+                System.out.println("10 - GET_ACTIVE_REPRESENTATIVES");
+
                 System.out.println("0 - Exit");
                 String choice = scanner.nextLine();
 
@@ -100,6 +102,8 @@ public class InquiryManagerClient {
                 return getRepresentativeInquiries();
             case "9":
                 return getRepresentativeNameByInquiryCode();
+            case "10":
+                return getActiveRepresentatives();
             default:
                 System.out.println("Invalid choice, please try again.");
                 return null;
@@ -201,4 +205,8 @@ public class InquiryManagerClient {
         return new RequestData(InquiryManagerActions.GET_REPRESENTATIVE_NAME_BY_INQUIRY_CODE, List.of(code));
     }
 
+    public RequestData getActiveRepresentatives() {
+
+        return new RequestData(InquiryManagerActions.GET_ACTIVE_REPRESENTATIVES,null);
+    }
 }

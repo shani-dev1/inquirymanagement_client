@@ -9,5 +9,6 @@ public enum InquiryManagerActions {
     DELETE_REPRESENTATIVE,      // יציאת נציג
     IS_REPRESENTATIVE_ACTIVE,   // בדיקת האם נציג פעיל
     GET_REPRESENTATIVE_INQUIRIES, // קבלת כל הפניות של נציג
-    GET_REPRESENTATIVE_NAME_BY_INQUIRY_CODE // קבלת שם נציג לפי מספר פנייה
+    GET_REPRESENTATIVE_NAME_BY_INQUIRY_CODE, // קבלת שם נציג לפי מספר פנייה
+    GET_ACTIVE_REPRESENTATIVES
 }
