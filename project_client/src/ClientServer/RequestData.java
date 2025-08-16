@@ -1,12 +1,24 @@
 package ClientServer;
+
 import java.io.Serializable;
 import java.util.List;
+
 public class RequestData implements Serializable {
     private static final long serialVersionUID = 6634007134381918066L;
-    InquiryManagerActions action;
-    List<Object> parameters;
-    public RequestData(InquiryManagerActions inquiryManagerActions , List<Object> parameters){
-       action = inquiryManagerActions;
-       this.parameters=parameters;
+
+    private InquiryManagerActions action;
+    private List<Object> parameters;
+
+    public RequestData(InquiryManagerActions action, List<Object> parameters) {
+        this.action = action;
+        this.parameters = parameters;
+    }
+
+    public InquiryManagerActions getAction() {
+        return action;
+    }
+
+    public List<Object> getParameters() {
+        return parameters;
     }
 }
