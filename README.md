@@ -1,4 +1,4 @@
-# Inquiry Management System  
+# Inquiry Management System - Client
 
 ## 📌 Overview  
 A **Java-based client-server system** for managing customer inquiries.  
